@@ -1,0 +1,378 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16089,        370]
+NotebookOptionsPosition[     13850,        307]
+NotebookOutlinePosition[     14205,        323]
+CellTagsIndexPosition[     14162,        320]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Assignment 2", "Title",
+ CellChangeTimes->{{3.663605653014559*^9, 3.6636056720300694`*^9}, {
+  3.677003345863706*^9, 3.677003348639365*^9}, {3.678035422511342*^9, 
+  3.678035422844199*^9}},ExpressionUUID->"979d983b-a884-4425-ae82-\
+8cf0f8b3f973"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The wavefunctions for a one-dimensional particle-in-a-box (PIB) have the \
+functional form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[CapitalPsi]", "(", "x", ")"}], "=", 
+    RowBox[{
+     SqrtBox[
+      FractionBox["2", "L"]], 
+     RowBox[{"sin", "(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"n", " ", "\[Pi]"}], "L"], "x"}], ")"}]}]}], 
+   TraditionalForm]],ExpressionUUID->"dd82be54-1c84-46ba-b465-a294ed6b6960"],
+ ", where n is an integer greater than zero and L is the length of the box. \
+Write a function, called psiTrue, that returns the value of the first (i.e. \
+n=1) wavefunction, for a box with a length of 1, and plot the function from 0 \
+to 1."
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, 3.6770033378908787`*^9, {
+   3.677003368811132*^9, 3.6770034227467127`*^9}, {3.677003507853339*^9, 
+   3.677003519322253*^9}, {3.677432195020995*^9, 3.6774322134288816`*^9}, 
+   3.678035442495965*^9, {3.678035513541787*^9, 3.678035543509284*^9}, {
+   3.678035592930752*^9, 3.678035753320704*^9}, {3.678035955705882*^9, 
+   3.678035961402273*^9}, {3.678036063248989*^9, 3.678036073303767*^9}, {
+   3.707058713542017*^9, 
+   3.707058714162386*^9}},ExpressionUUID->"387ce9f6-76f5-4f59-b2e5-\
+71fd78f763ba"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.663605918521637*^9, 3.663605946564022*^9}, {
+  3.677003429879546*^9, 3.677003499109365*^9}, {3.677432222034792*^9, 
+  3.677432226561582*^9}, {3.678035491046308*^9, 3.678035496643612*^9}, {
+  3.678036081321026*^9, 3.678036086695285*^9}, {3.678045071980711*^9, 
+  3.6780450735860977`*^9}},ExpressionUUID->"24a29c1a-f200-41cb-a009-\
+4bf3e20b2719"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "An important attribute for wavefunctions is that the are normalized (or at \
+least normalizable). The interpretation of a normalized wavefunction is that \
+the probability of finding the particle somewhere is equal to 1. The \
+mathematical meaning behind this is that the integral over all space of the \
+wavefunction squared is equal to 1. For us, this means that the integral of \
+",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["psiTrue", "2"], TraditionalForm]],ExpressionUUID->
+  "bd2b7dac-cc75-490c-bec4-d8c26ad69c41"],
+ " from zero to one is equal to one. Show that psiTrue is normalized."
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, 3.6770033413114567`*^9, {
+   3.6770035276204853`*^9, 3.6770035600434723`*^9}, 3.678035445972824*^9, {
+   3.6780357890348787`*^9, 3.678035872549902*^9}, {3.678035903472725*^9, 
+   3.678036033633173*^9}, 
+   3.707058742983582*^9},ExpressionUUID->"f39e7d66-4ada-43b9-8c34-\
+c19351bf7682"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.66360630326585*^9, 3.6636063115384083`*^9}, {
+   3.677003564851179*^9, 3.6770035951962223`*^9}, 3.678036048691299*^9, {
+   3.678045079361927*^9, 
+   3.678045081217815*^9}},ExpressionUUID->"db3af148-9b26-47dd-8fc5-\
+3666e44f9327"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Once we know the wavefunction for a quantum mechanical object, it turns out \
+we know everything we can possibly know about that object. For example, we \
+can calculate it\[CloseCurlyQuote]s average position, as well as it\
+\[CloseCurlyQuote]s average energy. To calculate properties (called \
+\[OpenCurlyDoubleQuote]observables\[CloseCurlyDoubleQuote] in quantum \
+mechanics) from a wavefunction, we first need mathematical functions that are \
+called operators. For example, the position operator is \
+\[OpenCurlyDoubleQuote]multiply by x\[CloseCurlyDoubleQuote], while the \
+energy operator in this model is \[OpenCurlyDoubleQuote]take the second \
+derivative, and multiply by -",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["h", 
+    RowBox[{"8", "\[Pi]", " ", "m"}]], TraditionalForm]],ExpressionUUID->
+  "cc9c9659-ee57-4d97-8249-4c253ef45b6f"],
+ ", where h is Planck\[CloseCurlyQuote]s constant and m is the object\
+\[CloseCurlyQuote]s mass\[CloseCurlyDoubleQuote]. Once we have found the \
+operator of interest, we calculate the property by integrating over all space \
+(from 0 to 1 for this problem) the wavefunction times the operator times the \
+wavefunction. Calculate the average position and average energy for the \
+wavefunction psiTrue. Do these quantities make sense, or at least match the \
+book?"
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663606454635068*^9, 
+   3.663606645035955*^9}, {3.663606724787838*^9, 3.6636067262246523`*^9}, 
+   3.6770036225480623`*^9, {3.677003764491551*^9, 3.6770037797843*^9}, 
+   3.677003810260618*^9, {3.677003875049676*^9, 3.6770038901439457`*^9}, 
+   3.678035449756557*^9, {3.6780361371811447`*^9, 3.6780361863050003`*^9}, {
+   3.6780363296681128`*^9, 3.678036334898334*^9}, {3.678036375591929*^9, 
+   3.678036448097986*^9}, {3.6780364866351347`*^9, 3.6780367486947927`*^9}, {
+   3.678047185912642*^9, 
+   3.6780472008467417`*^9}},ExpressionUUID->"00cf1443-54e2-4cdd-aea4-\
+9713cdd3312e"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.6770037245051327`*^9, {3.677003815556427*^9, 3.6770038375641727`*^9}, {
+   3.6770038971528053`*^9, 3.6770039143918943`*^9}, {3.678036252299055*^9, 
+   3.678036262513034*^9}, 3.678036727175043*^9, 
+   3.678045087473688*^9},ExpressionUUID->"9aff0995-e815-492e-b663-\
+46096f0fb5a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "An important theory in quantum mechanics is the variational theory. The \
+variational theory tells us that if we don\[CloseCurlyQuote]t know the \
+correct wavefunction for a quantum mechanical object, we can use another \
+wavefunction, and the energy we calculate will always be larger than the true \
+energy, and the closer the calculated energy is to the true energy, the \
+better the test wavefunction approximates the true wavefunction. Create a \
+function, called testPsi, with the formula ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SqrtBox["630"], " ", 
+    SuperscriptBox["x", "2"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "-", "x"}], ")"}], "2"]}], TraditionalForm]],
+  ExpressionUUID->"2ce70740-69da-4f8b-815d-f4056c3715c3"],
+ ", and show that this wavefunction is normalized."
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071233456306`*^9}, 
+   3.677003626491859*^9, {3.677432251593934*^9, 3.677432347472719*^9}, 
+   3.6780354538682337`*^9, {3.6780367688326397`*^9, 
+   3.678036997595715*^9}},ExpressionUUID->"e65c2296-0b10-4598-bfa5-\
+d933013ac0c1"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.663613614448601*^9, 3.6636136211668587`*^9}, 
+   3.677003719377472*^9, {3.67700402073563*^9, 3.677004031709105*^9}, {
+   3.67743227661861*^9, 3.677432280179318*^9}, {3.677432314088497*^9, 
+   3.67743236594593*^9}, {3.6780370065737333`*^9, 3.678037015373047*^9}, 
+   3.678045097601347*^9},ExpressionUUID->"e062d391-7fbb-4ba0-b8a2-\
+9ba754cda874"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Create a plot comparing the true wavefunction with the test wavefunction.\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071841637917`*^9}, 
+   3.677003630267892*^9, {3.677432485173334*^9, 3.67743260891661*^9}, {
+   3.677432644037232*^9, 3.6774327119016047`*^9}, {3.677432749837871*^9, 
+   3.677432789159707*^9}, {3.677432840027102*^9, 3.677432857338913*^9}, 
+   3.678035460588434*^9, {3.6780370346818867`*^9, 
+   3.6780370641438913`*^9}},ExpressionUUID->"f352d854-a6b8-41f0-b14e-\
+dab9dfa6567c"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.677003714705414*^9, {3.677432800986373*^9, 3.6774328050717297`*^9}, 
+   3.678037073154254*^9, 
+   3.6780451043540792`*^9},ExpressionUUID->"666840b2-d49c-4017-af74-\
+f31e03f7cd06"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Calculate the average position and average energy of a particle with the test \
+wavefunction.\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071841637917`*^9}, {
+   3.663607217188292*^9, 3.6636073253001223`*^9}, 3.677003637995442*^9, {
+   3.677433145352433*^9, 3.677433360567295*^9}, {3.677433450066409*^9, 
+   3.677433517388068*^9}, {3.6774335524756002`*^9, 3.677433828581995*^9}, {
+   3.67743387781085*^9, 3.6774340928935337`*^9}, 3.6780354679725723`*^9, {
+   3.678037088782214*^9, 
+   3.678037120867733*^9}},ExpressionUUID->"c58cae70-0323-40b3-a55d-\
+185230609890"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.677003706201828*^9, {3.677434470759183*^9, 3.677434662168806*^9}, {
+   3.677434786717215*^9, 3.677434830685376*^9}, {3.678037132886504*^9, 
+   3.678037143750535*^9}, 
+   3.67804510949026*^9},ExpressionUUID->"3777e2e9-dd88-4548-9af9-\
+cb82c4fbb572"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Calculate the ratio of the average energy from the test wavefunction to the \
+average energy of the true wavefunction.\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}, 3.678035474003887*^9, {3.678037163963992*^9, 
+   3.678037226914163*^9}, {3.707058883237855*^9, 
+   3.7070588845426493`*^9}},ExpressionUUID->"c8ddc37a-5221-4cdc-a243-\
+738f0b0d7111"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6636117359676113`*^9, 3.6636118036988993`*^9}, 
+   3.677003700337785*^9, {3.677434671944089*^9, 3.677434772365443*^9}, {
+   3.677434845877157*^9, 3.677434856115559*^9}, {3.678037236692734*^9, 
+   3.678037272538363*^9}, 
+   3.678045115305097*^9},ExpressionUUID->"778fb6b6-ebda-47b0-882d-\
+887b3c4339d5"]
+}, Open  ]],
+
+Cell["\<\
+In your own words, explain why the ratio you calculated above was greater \
+than one. What should the ratio be if the test wavefunction you pick is the \
+same as the true wavefunction?\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}, {3.707058569271977*^9, 3.7070586702068233`*^9}, {
+   3.707058791354911*^9, 
+   3.70705887159175*^9}},ExpressionUUID->"a8462d6f-1570-4a89-8d48-\
+aada2cd98a67"],
+
+Cell["\<\
+
+\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}, {3.707058593519101*^9, 
+   3.707058596963456*^9}},ExpressionUUID->"44659670-064b-47b8-b2f8-\
+a1cee30a7f41"]
+}, Open  ]]
+},
+WindowSize->{808, 582},
+WindowMargins->{{Automatic, 99}, {Automatic, 81}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 252, 4, 92, "Title", "ExpressionUUID" -> \
+"979d983b-a884-4425-ae82-8cf0f8b3f973"],
+Cell[CellGroupData[{
+Cell[857, 30, 1488, 31, 269, "Subchapter", "ExpressionUUID" -> \
+"387ce9f6-76f5-4f59-b2e5-71fd78f763ba"],
+Cell[2348, 63, 393, 6, 32, "Input", "ExpressionUUID" -> \
+"24a29c1a-f200-41cb-a009-4bf3e20b2719"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2778, 74, 1180, 21, 301, "Subchapter", "ExpressionUUID" -> \
+"f39e7d66-4ada-43b9-8c34-c19351bf7682"],
+Cell[3961, 97, 278, 5, 32, "Input", "ExpressionUUID" -> \
+"db3af148-9b26-47dd-8fc5-3666e44f9327"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4276, 107, 2196, 36, 578, "Subchapter", "ExpressionUUID" -> \
+"00cf1443-54e2-4cdd-aea4-9713cdd3312e"],
+Cell[6475, 145, 330, 6, 32, "Input", "ExpressionUUID" -> \
+"9aff0995-e815-492e-b663-46096f0fb5a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6842, 156, 1423, 27, 378, "Subchapter", "ExpressionUUID" -> \
+"e65c2296-0b10-4598-bfa5-d933013ac0c1"],
+Cell[8268, 185, 394, 6, 32, "Input", "ExpressionUUID" -> \
+"e062d391-7fbb-4ba0-b8a2-9ba754cda874"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8699, 196, 825, 13, 95, "Subchapter", "ExpressionUUID" -> \
+"f352d854-a6b8-41f0-b14e-dab9dfa6567c"],
+Cell[9527, 211, 230, 5, 32, "Input", "ExpressionUUID" -> \
+"666840b2-d49c-4017-af74-f31e03f7cd06"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9794, 221, 897, 15, 95, "Subchapter", "ExpressionUUID" -> \
+"c58cae70-0323-40b3-a55d-185230609890"],
+Cell[10694, 238, 299, 6, 32, "Input", "ExpressionUUID" -> \
+"3777e2e9-dd88-4548-9af9-cb82c4fbb572"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11030, 249, 860, 14, 95, "Subchapter", "ExpressionUUID" -> \
+"c8ddc37a-5221-4cdc-a243-738f0b0d7111"],
+Cell[11893, 265, 351, 6, 32, "Input", "ExpressionUUID" -> \
+"778fb6b6-ebda-47b0-882d-887b3c4339d5"]
+}, Open  ]],
+Cell[12259, 274, 903, 15, 163, "Subchapter", "ExpressionUUID" -> \
+"a8462d6f-1570-4a89-8d48-aada2cd98a67"],
+Cell[13165, 291, 669, 13, 79, "Subchapter", "ExpressionUUID" -> \
+"44659670-064b-47b8-b2f8-a1cee30a7f41"]
+}, Open  ]]
+}
+]
+*)
+

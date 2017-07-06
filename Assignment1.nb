@@ -1,0 +1,422 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16582,        414]
+NotebookOptionsPosition[     14342,        351]
+NotebookOutlinePosition[     14698,        367]
+CellTagsIndexPosition[     14655,        364]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Assignment 1", "Title",
+ CellChangeTimes->{{3.663605653014559*^9, 3.6636056720300694`*^9}, {
+  3.677003345863706*^9, 
+  3.677003348639365*^9}},ExpressionUUID->"4ce7a567-d7f5-4ee1-bcf1-\
+b081205074ef"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "What is ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["2", "3"], ")"}], "4"], TraditionalForm]],ExpressionUUID->
+  "591ba7a3-e63c-4e42-836c-51a69b0e1b0f"],
+ "? What is ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", 
+    RowBox[{"(", 
+     SuperscriptBox["3", "4"], ")"}]], TraditionalForm]],ExpressionUUID->
+  "57f321b7-d544-418c-992a-720edecbe433"],
+ "? What is ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", 
+    SuperscriptBox["3", "4"]], TraditionalForm]],ExpressionUUID->
+  "3d22c240-9307-4b06-8a4c-f6665999e262"],
+ "?"
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, 3.6770033378908787`*^9, {
+   3.677003368811132*^9, 3.6770034227467127`*^9}, {3.677003507853339*^9, 
+   3.677003519322253*^9}, {3.677432195020995*^9, 
+   3.6774322134288816`*^9}},ExpressionUUID->"dca59171-1460-4ba7-97c7-\
+79357911bfbf"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.663605918521637*^9, 3.663605946564022*^9}, {
+   3.677003429879546*^9, 3.677003499109365*^9}, {3.677432222034792*^9, 
+   3.677432226561582*^9}, 
+   3.6774349922387133`*^9},ExpressionUUID->"56594281-1e05-4f72-b292-\
+d6437d64ed98"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Which is bigger, ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[ExponentialE]", "\[Pi]"], TraditionalForm]],
+  ExpressionUUID->"bed6a530-e83a-4366-a904-2290f225b38a"],
+ "or ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[Pi]", "\[ExponentialE]"], TraditionalForm]],
+  ExpressionUUID->"f448573b-0dc1-4fa3-9719-2357c47ec7c2"],
+ "?"
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, 3.6770033413114567`*^9, {
+   3.6770035276204853`*^9, 
+   3.6770035600434723`*^9}},ExpressionUUID->"5aa195d9-f98a-4d8e-bea9-\
+46412c9549c6"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.66360630326585*^9, 3.6636063115384083`*^9}, {
+   3.677003564851179*^9, 3.6770035951962223`*^9}, 
+   3.677434996461154*^9},ExpressionUUID->"b9da0453-5b4e-4bf3-bd59-\
+4d2365c766b8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Create a constant called myPi, and set it equal to 3.14. What is the percent \
+error between this value of pi and the actual value?\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663606454635068*^9, 
+   3.663606645035955*^9}, {3.663606724787838*^9, 3.6636067262246523`*^9}, 
+   3.6770036225480623`*^9, {3.677003764491551*^9, 3.6770037797843*^9}, 
+   3.677003810260618*^9, {3.677003875049676*^9, 
+   3.6770038901439457`*^9}},ExpressionUUID->"eea6aa86-358c-40db-9c40-\
+42a4a0ef8cc8"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.6770037245051327`*^9, {3.677003815556427*^9, 3.6770038375641727`*^9}, {
+   3.6770038971528053`*^9, 3.6770039143918943`*^9}, 3.6774350012770147`*^9, 
+   3.6774350378281603`*^9},ExpressionUUID->"5fef82d5-c156-4217-894b-\
+a6fe8524dbd8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+What fraction does 1/500-1/401 reduce to? What decimal is this equal to out \
+to the 18th decimal point?\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071233456306`*^9}, 
+   3.677003626491859*^9, {3.677432251593934*^9, 
+   3.677432347472719*^9}},ExpressionUUID->"213fdfa8-7582-4fbb-a86e-\
+4c43d639caa2"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.663613614448601*^9, 3.6636136211668587`*^9}, 
+   3.677003719377472*^9, {3.67700402073563*^9, 3.677004031709105*^9}, {
+   3.67743227661861*^9, 3.677432280179318*^9}, {3.677432314088497*^9, 
+   3.67743236594593*^9}, 3.677435005283512*^9, 
+   3.6774350395385733`*^9},ExpressionUUID->"13f62cf2-b242-4bb3-a100-\
+3d842a892858"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The ideal gas law is a formula that relates the temperature T, pressure P, \
+volume V, and number of moles of a gas n, and takes the form PV=nRT, where R \
+is a constant. A useful extension of this formula is the Van der Waals \
+equation, which takes the form ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"RT", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"P", "+", 
+       SuperscriptBox[
+        RowBox[{"a", "(", 
+         FractionBox["n", "V"], ")"}], "2"]}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["V", "n"], "-", "b"}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"10c5a65e-5000-49c1-96ba-3dd2628698ac"],
+ ", where a and b are constants that depend on the specific gas (oxygen vs. \
+argon, for example). Use ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\[CloseCurlyQuote]s built-in Solve function to solve the Van der Waals \
+equation for pressure, as well as for volume. How much would it suck to do \
+that with a pen and paper?"
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071841637917`*^9}, 
+   3.677003630267892*^9, {3.677432485173334*^9, 3.67743260891661*^9}, {
+   3.677432644037232*^9, 3.6774327119016047`*^9}, {3.677432749837871*^9, 
+   3.677432789159707*^9}, {3.677432840027102*^9, 
+   3.677432857338913*^9}},ExpressionUUID->"8eefb73b-cbc7-4eca-a94f-\
+85e0d469f1a8"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.677003714705414*^9, {3.677432800986373*^9, 3.6774328050717297`*^9}, 
+   3.677435010980707*^9, 
+   3.67743504406649*^9},ExpressionUUID->"fe277765-1595-4216-82c0-\
+08154e473514"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "One of the earliest theories that gave rise to quantum mechanics is Planck\
+\[CloseCurlyQuote]s theory of blackbody radiation. By requiring energy to be \
+quantized, Planck derived a relationship that described how the spectral \
+radiance of a hot object at different wavelengths depended on the temperature \
+of the object. This relationship is known as Planck\[CloseCurlyQuote]s \
+distribution law, and is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "\[Lambda]", ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", 
+       SuperscriptBox["hc", "2"]}], 
+      SuperscriptBox["\[Lambda]", "5"]], 
+     FractionBox["1", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        FractionBox["hc", "\[Lambda]kT"]], "-", "1"}]], " "}]}], 
+   TraditionalForm]],ExpressionUUID->"d564beab-ae94-4a34-9f7a-5f2c339ce29b"],
+ ", where h = Planck\[CloseCurlyQuote]s constant (6.626x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["10", 
+      RowBox[{"-", "34"}]], "J", " ", "s"}], ")"}], TraditionalForm]],
+  ExpressionUUID->"44473105-d67a-494e-813b-5364655c73a8"],
+ ", c = the speed of light (3.00x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["10", "8"], 
+     FractionBox["m", "s"]}], ")"}], TraditionalForm]],ExpressionUUID->
+  "02b997fb-6325-4b90-a919-85b695675ff4"],
+ ", k is Boltzmann\[CloseCurlyQuote]s constant (1.381x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["10", 
+     RowBox[{"-", "23"}]], 
+    FractionBox["J", "K"]}], TraditionalForm]],ExpressionUUID->
+  "82d6cd3f-8c99-488d-93e6-c518b4bf2c79"],
+ "), \[Lambda] is the wavelength of light, and T is the absolute temperature. \
+Prior to Planck\[CloseCurlyQuote]s breakthrough, the best theory relating the \
+spectral radiance of a hot object at different wavelengths to the temperature \
+of the object was the Rayleigh-Jeans law, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"g", "(", "\[Lambda]", ")"}], "=", 
+    FractionBox[
+     RowBox[{"2", "ckT"}], 
+     SuperscriptBox["\[Lambda]", "4"]]}], TraditionalForm]],ExpressionUUID->
+  "f5e4330c-3b83-4d76-bff8-049d32875a8a"],
+ ". Define constants for h, c, and k, and then define two functions, one for \
+Planck\[CloseCurlyQuote]s distribution law and one for the Rayleigh-Jeans \
+law, that take wavelength and temperature as inputs and returns the spectral \
+radiance."
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606269208987*^9, 3.663606270257213*^9}, {3.6636069801855583`*^9, 
+   3.6636070829435663`*^9}, {3.663607115346734*^9, 3.6636071841637917`*^9}, {
+   3.663607217188292*^9, 3.6636073253001223`*^9}, 3.677003637995442*^9, {
+   3.677433145352433*^9, 3.677433360567295*^9}, {3.677433450066409*^9, 
+   3.677433517388068*^9}, {3.6774335524756002`*^9, 3.677433828581995*^9}, {
+   3.67743387781085*^9, 
+   3.6774340928935337`*^9}},ExpressionUUID->"ab625296-c34f-4a98-bf13-\
+794663c6cf00"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.677003706201828*^9, {3.677434470759183*^9, 3.677434662168806*^9}, {
+   3.677434786717215*^9, 3.677434830685376*^9}, {3.6774350169725637`*^9, 
+   3.677435046802465*^9}},ExpressionUUID->"5aff7792-e631-4785-b04f-\
+a729f81fb06c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Graph the two functions you\[CloseCurlyQuote]ve just defined on the same \
+plot over the range 0 \[LessEqual] \[Lambda] \[LessEqual] 2x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]], TraditionalForm]],ExpressionUUID->
+  "dce87dae-8602-4ad3-bc91-0ad44e40e369"],
+ "m, both in black with a solid line for Planck\[CloseCurlyQuote]s \
+distribution law and a dashed line for the Rayleigh-Jeans law, for an object \
+with a temperature of 5,800 K (the surface temperature of the sun). Set the \
+y-axis range to be between 0 and 5x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "13"], TraditionalForm]],ExpressionUUID->
+  "599bf4db-27f0-4c8a-861a-2db9cc789075"],
+ ", label the x-axis \[OpenCurlyDoubleQuote]Lambda\[CloseCurlyDoubleQuote], \
+the y-axis \[OpenCurlyDoubleQuote]Radiance\[CloseCurlyDoubleQuote], the solid \
+curve \[OpenCurlyDoubleQuote]Planck\[CloseCurlyDoubleQuote], and the dashed \
+curve \[OpenCurlyDoubleQuote]Classical\[CloseCurlyDoubleQuote]."
+}], "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}},ExpressionUUID->"741d85ba-88a2-4207-8d57-\
+e472b2180265"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.6636117359676113`*^9, 3.6636118036988993`*^9}, 
+   3.677003700337785*^9, {3.677434671944089*^9, 3.677434772365443*^9}, {
+   3.677434845877157*^9, 3.677434856115559*^9}, {3.677435021492536*^9, 
+   3.677435050082409*^9}},ExpressionUUID->"5d8da49f-64a3-42e6-9f78-\
+e5cd39738418"]
+}, Open  ]],
+
+Cell["\<\
+In your own words, describe the graph above, focusing on the behavior of each \
+curve and the relationship between wavelength and radiance for both models.\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}, {3.707058569271977*^9, 
+   3.7070586702068233`*^9}},ExpressionUUID->"5851f286-7be1-472a-b673-\
+d3072f0d89b9"],
+
+Cell["\<\
+
+\
+\>", "Subchapter",
+ CellChangeTimes->{{3.663605705614245*^9, 3.663605760803849*^9}, 
+   3.663605804362789*^9, {3.6636058971710167`*^9, 3.663605915801206*^9}, {
+   3.663605998107522*^9, 3.6636060073144703`*^9}, 3.663606072257621*^9, {
+   3.663606229280918*^9, 3.663606299127985*^9}, {3.663611630194903*^9, 
+   3.663611717655253*^9}, {3.663612892980136*^9, 3.663612922642173*^9}, 
+   3.677003641971222*^9, {3.677434095635511*^9, 3.677434145372333*^9}, {
+   3.67743421657202*^9, 3.677434399911613*^9}, {3.677434869524219*^9, 
+   3.677434930208809*^9}, {3.707058593519101*^9, 
+   3.707058596963456*^9}},ExpressionUUID->"154919d4-e87d-4264-b766-\
+ed931908e906"]
+}, Open  ]]
+},
+WindowSize->{808, 582},
+WindowMargins->{{137, Automatic}, {Automatic, 37}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 18, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 206, 4, 92, "Title", "ExpressionUUID" -> \
+"4ce7a567-d7f5-4ee1-bcf1-b081205074ef"],
+Cell[CellGroupData[{
+Cell[811, 30, 1109, 30, 68, "Subchapter", "ExpressionUUID" -> \
+"dca59171-1460-4ba7-97c7-79357911bfbf"],
+Cell[1923, 62, 296, 5, 54, "Input", "ExpressionUUID" -> \
+"56594281-1e05-4f72-b292-d6437d64ed98"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2256, 72, 773, 19, 63, "Subchapter", "ExpressionUUID" -> \
+"5aa195d9-f98a-4d8e-bea9-46412c9549c6"],
+Cell[3032, 93, 247, 4, 54, "Input", "ExpressionUUID" -> \
+"b9da0453-5b4e-4bf3-bd59-4d2365c766b8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3316, 102, 730, 12, 129, "Subchapter", "ExpressionUUID" -> \
+"eea6aa86-358c-40db-9c40-42a4a0ef8cc8"],
+Cell[4049, 116, 303, 5, 54, "Input", "ExpressionUUID" -> \
+"5fef82d5-c156-4217-894b-a6fe8524dbd8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4389, 126, 633, 11, 95, "Subchapter", "ExpressionUUID" -> \
+"213fdfa8-7582-4fbb-a86e-4c43d639caa2"],
+Cell[5025, 139, 389, 6, 54, "Input", "ExpressionUUID" -> \
+"13f62cf2-b242-4bb3-a100-3d842a892858"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5451, 150, 1655, 35, 377, "Subchapter", "ExpressionUUID" -> \
+"8eefb73b-cbc7-4eca-a94f-85e0d469f1a8"],
+Cell[7109, 187, 246, 5, 54, "Input", "ExpressionUUID" -> \
+"fe277765-1595-4216-82c0-08154e473514"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7392, 197, 3125, 72, 648, "Subchapter", "ExpressionUUID" -> \
+"ab625296-c34f-4a98-bf13-794663c6cf00"],
+Cell[10520, 271, 295, 5, 54, "Input", "ExpressionUUID" -> \
+"5aff7792-e631-4785-b04f-a729f81fb06c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10852, 281, 1615, 29, 299, "Subchapter", "ExpressionUUID" -> \
+"741d85ba-88a2-4207-8d57-e472b2180265"],
+Cell[12470, 312, 344, 5, 54, "Input", "ExpressionUUID" -> \
+"5d8da49f-64a3-42e6-9f78-e5cd39738418"]
+}, Open  ]],
+Cell[12829, 320, 825, 13, 129, "Subchapter", "ExpressionUUID" -> \
+"5851f286-7be1-472a-b673-d3072f0d89b9"],
+Cell[13657, 335, 669, 13, 79, "Subchapter", "ExpressionUUID" -> \
+"154919d4-e87d-4264-b766-ed931908e906"]
+}, Open  ]]
+}
+]
+*)
+
